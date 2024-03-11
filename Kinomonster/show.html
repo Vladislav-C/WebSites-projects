@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Contacts</title>
+	<meta name="description" content="KinoMonster is a movie portal"/>
+	<meta name="keywords" content="movies, movie, hd"/>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">KinoMonster</a></h1>
+					<h2>Movies are our passion!</h2>
+				</div>
+			</div>
+			<div class="menubar">
+				
+				<ul class="menu">
+					<li  class="selected"><a href="index.html">Main</a></li>
+					<li><a href="films.html">Movies</a></li>
+					<li><a href="#">TV-series</a></li>
+					<li><a href="rating.html">Film rating</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="site_content">
+		
+		<div class="sidebar_container">
+			
+			<div class="sidebar">
+					<h2>Search</h2>
+					<form method="post" action="#" id="search_form">
+						<input type="search" name="search_fiend" placeholder="your request" />
+						<input type="submit" class="btn" value="find" />
+					</form>
+			</div>
+
+			<div class="sidebar">
+				<h2>Sign in</h2>
+				<from method="post" action="#" id="login">
+					
+					<input type="text" name="login_field" placeholder="login" />
+					<input type="password" name="password_field" placeholder="password"/>
+					<input type="submit" class="btn" value="sign in"/>
+					<div class="lables_passreg_text">
+						<span><a href="#">fogot the password?</a></span> | <span><a href="#">sign up</a></span>
+					</div>
+
+				</from>
+			</div>
+
+			<div class="sidebar">
+				<h2>News</h2>
+				<span>31.02.2018</span>
+				<p>We've launced an extended search</p>
+				<a href="#">read</a>
+			</div>
+
+			<div class="sidebar">
+				<h2>Rating</h2>
+				<ul>
+					<li><a href="show.html">Interstellar</a><span class="rating_sidebar">8.1</span></li>
+					<li><a href="#">Matrix</a><span class="rating_sidebar">8.0</span></li>
+					<li><a href="#">Mad Max</a><span class="rating_sidebar">7.5</span></li>
+					<li><a href="#">Cloud Atlas</a><span class="rating_sidebar">7.1</span></li>
+				</ul>
+			</div>
+
+		</div>
+		
+		<div class="content">
+			<h1>Interstellar</h1>
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/6ybBuTETr3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<div class="info_film_page">
+				<span class="label">rating: </span><span class="value">8.1 / 10</span>
+				<span class="label">year:  </span><span class="value">2014</span>
+				<span class="label">director: </span><span class="value">Christopher Nolan</span>
+			</div>
+			
+			<hr>
+
+			<h2>Description</h2>
+			<div class="description_film">
+				<img src="assets/img/inter.png"/>
+				Our time on Earth has come to an end, a team of explorers taking on the most important mission in human history; traveling beyond our galaxy to see if humanity has a future among the stars.
+			</div>
+
+			<hr>
+			<h2>Reviews</h2>
+			<div class="reviews">
+				<div class="review_name">
+					Bob
+				</div>
+				<div class="review_text">
+					Great moveiw !
+				</div>
+			</div>
+			<div class="reviews">
+				<div class="review_name">
+					Alex
+				</div>
+				<div class="review_text">
+					Thanks !!!
+				</div>
+			</div>
+
+			<div class="send">
+
+				<form method="post" action="#" id ="review">
+			
+					<input type="text" name="review_name" placeholder="your name"/>
+					<textarea name="review_text"></textarea>
+					<input type="submit" class="btn" value="send">
+			
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>
+			<a href="index.html">Main</a> |
+			<a href="films.html">Movies</a> |
+			<a href="#">TV-series</a> |
+			<a href="rating.html">Film rating</a> |
+			<a href="contact.html">Contacts</a>
+		</p>
+		<p>wh-db.com 2015</p>
+	</div>
+
+
+</body>
+</html>

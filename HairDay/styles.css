@@ -1,0 +1,148 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: 'Markazi Text', serif;
+  font-size: 16px;
+  margin: 3rem 5%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Logo */
+
+header .logo{
+  width: 500px;
+  margin: auto;
+}
+
+.logo img{
+  width: 100%;
+}
+
+/* Navigation bar */
+
+nav {
+  display: flex;
+  margin: 2rem 0;
+}
+
+nav a {
+  flex: 1;
+  color: #F2F2F2;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #0D0D0D;
+}
+
+nav a:hover, nav a.active {
+  background-color: #F2F2F2;
+  color: #0D0D0D;
+}
+
+nav a:first-child {
+  border-radius: 30px 0 0 30px;
+}
+
+nav a:last-child {
+  border-radius: 0 30px 30px 0;
+}
+
+/* Main content */
+
+
+section{
+  display: flex;
+  flex-flow: wrap;
+  gap: 2rem 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+section.promotion article {
+  /* background-image: url(./img/hair-promotion.jpg); */
+  background-color: #0D0D0D;
+  background-size: 100% auto;
+  color:#D0604C;
+}
+
+article {
+  flex: 1;
+  min-width: 250px;
+  background-color: #F2B4AE;
+  border-radius: 1rem;
+  padding: 2rem;
+
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+/* Footer */
+
+footer {
+  margin: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo {
+  width: 110px;
+}
+
+footer .copyright {
+  width: 50%;
+  text-align: end;
+}
+
+/* @media only screen and (max-width: 768px) {
+  section {
+    flex-flow: column;
+  }
+
+  article {
+    padding: 30px 80px;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+} */
+
+@media only screen and (max-width: 670px) {
+
+  header .logo {
+    width: 80%;
+  }
+
+  nav {
+    flex-flow: column;
+  }
+
+  nav a:first-child {
+    border-radius: 30px 30px 0 0;
+  }
+  
+  nav a:last-child {
+    border-radius: 0 0 30px 30px;
+  }
+}
